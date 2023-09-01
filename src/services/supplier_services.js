@@ -2,7 +2,7 @@ import axios from 'axios';
 
 class SupplierDataService{
 	getAll(token){
-		return axios.get('url')
+		return axios.get("http://127.0.0.1:8000/api/")
 	}
 
 	login(data){
@@ -13,5 +13,4 @@ class SupplierDataService{
 		return axios.post("http://127.0.0.1:8000/api/signup/", data)
 	}
 }
-
 export default new SupplierDataService();
